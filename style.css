@@ -1,0 +1,139 @@
+/*use this at start of CSS file. will ensure consistent width/height*/
+* {}
+  /*box-sizing: border-box;
+  display: flex;}*/
+.board {
+  display: inline-block;
+  position: relative;
+  min-width: 1000px;
+  /*min-height:300px;*/
+
+}
+.c00 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  left: 0;
+  /*font: rgba(0,0,0,0);*/
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c01 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  left: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c02 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c10 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c11 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c12 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c20 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  bottom: 0;
+  left: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c21 {
+  border-style: solid;
+  border-color: black;
+
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  bottom: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
+.c22 {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  /*min-height: 35vh;*/
+  max-height: 35vh;
+  /*min-width: 35vw;*/
+  max-width: 35vw;
+  top: 0;
+  right: 0;
+  /*display:flex;
+  flex-direction: column; (can also be rows)
+  min=height: 100vh;*/
+}
