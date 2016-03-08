@@ -5,18 +5,24 @@
 .board {
   display: inline-block;
   position: relative;
-  min-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
   /*min-height:300px;*/
 
 }
+
+.box {
+  height: 100px;
+  /*min-width: 35vw;*/
+  width: 100px;
+    margin: 0 auto;
+}
+
 .c00 {
   border-style: solid;
   border-color: black;
   display: inline-block;
   /*min-height: 35vh;*/
-  max-height: 35vh;
-  /*min-width: 35vw;*/
-  max-width: 35vw;
   top: 0;
   left: 0;
   /*font: rgba(0,0,0,0);*/
