@@ -1,0 +1,143 @@
+/*use this at start of CSS file. will ensure consistent width/height*/
+* {
+}
+div {
+  
+}
+body {
+  background-color: lightgreen;
+
+  display:inline-block;
+  postion:relative;
+}
+
+.container{
+  min-width: 300px;
+  margin:0 auto;
+  min-height:500px;
+  position: relative;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  display: inline;
+  text-align: center;
+  margin:0 auto;
+  postion:relative;
+}
+.board{
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  margin:0 auto;
+  top:100px;
+  bottom: 0;
+  left: 600px;
+  right: 0;
+  margin: 0 auto;
+
+}
+.box {
+  display: inline-block;
+  border-style: solid;
+  border-color: darkgreen;
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top ;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  font-size: 60px;
+
+}
+.controls {
+  position:absolute;
+  width: 300px;
+}
+.PL1 {
+  position:absolute;
+
+  display: inline-block;
+  background-color: red;
+  width: 70px;
+  margin-bottom:10px;
+
+}
+.PL2 {
+  position:absolute;
+
+  display: inline-block;
+  background-color: yellow;
+  width: 70px;
+  right:0px;
+  margin-bottom:10px;
+
+}
+.start {
+  position:absolute;
+
+  display: inline-block;
+  background-color: blue;
+  width: 70px;
+  margin-bottom:10px;
+}
+.fart {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+    margin:0 auto;
+
+}
+/*
+.c00 {
+  top: 0;
+  left: 0;
+}
+
+.c01 {
+  top: 0;
+  left: 0;
+}
+
+.c02 {
+  top: 0;
+  right: 0;
+}
+
+.c10 {
+  top: 0;
+  right: 0;
+}
+
+.c11 {
+  top: 0;
+  right: 0;
+}
+
+.c12 {
+  top: 0;
+  right: 0;
+}
+
+.c20 {
+  bottom: 0;
+  left: 0;
+}
+
+.c21 {
+  bottom: 0;
+  right: 0;
+}
+
+.c22 {
+  top: 0;
+  right: 0;
+}
+*/
