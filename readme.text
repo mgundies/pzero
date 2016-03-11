@@ -1,0 +1,78 @@
+A Game of Tic-Tac-Toe by Marc Underwood
+=======
+
+Overview of program
+-----------
+
+### Outline
+
+The program presents a game of Tic-Tac-Toe in a web browser.
+
+The user can select to play the game four ways. These are:
+
+1. Two people can play each other;
+2. A person can play the program starting first;
+3. A person can play the program starting second;
+4. The program can be set so that two 'AI' players
+are competing.
+
+A game is won when either player wins or
+there are not more spaces left on the board.
+
+The game can be restarted without refreshing the browser. Before
+starting a new game the user can adjust the settings for player
+and AI.
+
+A score is kept. This can be reset by clicking on the
+area of the screen where the score is displayed.
+
+The rules of tic-tac-toe can be found at https://en.wikipedia.org/wiki/Tic-tac-toe
+
+### Files
+
+The logic governing the program flow and game data is contained
+within a javascript file zero.js. The game makes use of the
+following files:
+ * index.html (contains the html for onscreen presentation),
+ * s3.css (formatting and animation code),
+ * zero.js (contains game data, AI, program initialization and flow),
+ * normalize.css (CSS file prepending the game CSS ),
+ * jquery library (accessed via download from google API's),
+ * various image files used by animations in-game.
+
+ ### Javascript: Game control, game state data, game logic.
+
+ The Javascript code is organized as follows:
+
+ 1. Game control: functions run on page loading, to handle user input events, and
+ to tally the wins by each player.
+ 2. Board object: contains the state of the game. This includes which player takes the
+ next turn; the state of the board (whether a position has been used and by whom). Also includes
+methods for determining if the game has been won, or if it is drawn (all turns used up).
+ 3. AI object ('Borg'). This is a collection of methods that decides on moves based on the
+ number of turns played and the state of the board.
+
+### Game control
+
+* Document Ready: set's up default player options and loads the score tally from local storage
+* Click event handlers.
+* Functions to reset the game logic and screen after a game has been completed
+
+### Board object
+* creats a 3 by 3 array of undefined at the start of the game. Also sets the gameover parameter to false and the next player move to player 1.
+* swapPlrMv: toggles between players. Called after a successful move
+* gridStatus: Takes cell coordinates.Returns the status of a cell (used by Player1, Player2 or not used i.e. undefined)
+* freeCells: counts how many unused cells are left (used by AI)
+* evalWin: looks at the 8 win scenarios and also checks the case of a row of 3 undefined cells
+* anyMovesLeft: gives a true/false anwers to whether any moves are left (used to determine if game is over)
+* Move: checks if a cell is free and if not populates it with the players moveStructure
+* Update: updates the HTML game board (in hindsight should not be in Board object)
+
+### Borg object (AI)
+* two properties aiPlayer1 and aiPlayer2 (tells the object if a player is AI and thus should used AI to play moves)
+* gameCtrl: method to determine if aiPlayer1 or aiPlayer 2 should be and calls borg.moveStructure...
+* moveStructure: represents the underlying decision tree of the AI. Basically (1) if there are 9 turns to go use corner, if (8) then take the center unless it is gone... then use a corner.
+If moves <8 then A) look for a winning move (call blockMove(True)); if no such move exists then look to block the other player from making a winning move (blockMove(false)). else take any remaining
+free square.
+
+END
